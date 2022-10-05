@@ -192,7 +192,7 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:text="Jesús de Nazaret, también llamado Cristo, Jesucristo o simplemente Jesús (provincia de Judea, Imperio romano; ca. 4 a. C. -Jerusalén, Imperio romano; 30-33 d. C.), fue un predicador y líder religioso judío del siglo I. Es la figura central del cristianismo y una de las más influyentes de la historia."
+                    android:text="En enero de 1516 se tiene la primera mención del maestro en la Catedral de Tarazona: «atendido que el dicho mosén Cristóbal es persona suficiente para el tal cargo [de maestro de capilla], que el año pasado había estado por muy poco salario y que merecía más, la asignaron DCCC sueldos de salario.» Es el primer maestro de capilla de la Catedral de Tarazona del que se tienen noticias."
                     android:layout_marginTop="6dp"
                     android:maxLines="10"
                     app:layout_constraintStart_toStartOf="parent"
