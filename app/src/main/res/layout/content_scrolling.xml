@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ScrollingActivity"
+    tools:showIn="@layout/activity_scrolling">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/fab_margin"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
+                
+                <ImageView
+                    android:id="@+id/img_pepe"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/nombre1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pepe Viyuela"
+                    app:layout_constraintStart_toEndOf="@id/img_pepe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    />
+
+                <Button
+                    android:id="@+id/pepebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wikipedia"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintStart_toEndOf="@id/img_pepe"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nombre1"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="José Viyuela Castillo (Logroño, 2 de junio de 1963) más conocido como Pepe Viyuela, es un actor, payaso y humorista español licenciado en Filosofía y Bellas Artes. Desde febrero de 2017 también se dedica a la política española con el partido político Podemos."
+                    android:layout_marginTop="6dp"
+                    android:maxLines="10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_pepe"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_jesus"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/nombre2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jesus de Nazaret"
+                    app:layout_constraintStart_toEndOf="@id/img_jesus"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    />
+
+                <Button
+                    android:id="@+id/jesusbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wikipedia"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintStart_toEndOf="@id/img_jesus"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nombre2"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jesús de Nazaret, también llamado Cristo, Jesucristo o simplemente Jesús (provincia de Judea, Imperio romano; ca. 4 a. C. -Jerusalén, Imperio romano; 30-33 d. C.), fue un predicador y líder religioso judío del siglo I. Es la figura central del cristianismo y una de las más influyentes de la historia."
+                    android:layout_marginTop="6dp"
+                    android:maxLines="10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_jesus"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/card3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            android:clickable="true"
+            android:focusable="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_soria"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/nombre3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jesus de Nazaret"
+                    app:layout_constraintStart_toEndOf="@id/img_soria"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:gravity="center"
+                    android:textAppearance="?attr/textAppearanceHeadline5"
+                    />
+
+                <Button
+                    android:id="@+id/soriabtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wikipedia"
+                    android:layout_marginTop="6dp"
+                    app:layout_constraintStart_toEndOf="@id/img_soria"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/nombre3"
+                    />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jesús de Nazaret, también llamado Cristo, Jesucristo o simplemente Jesús (provincia de Judea, Imperio romano; ca. 4 a. C. -Jerusalén, Imperio romano; 30-33 d. C.), fue un predicador y líder religioso judío del siglo I. Es la figura central del cristianismo y una de las más influyentes de la historia."
+                    android:layout_marginTop="6dp"
+                    android:maxLines="10"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img_soria"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
